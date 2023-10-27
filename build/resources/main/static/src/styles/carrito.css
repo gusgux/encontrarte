@@ -1,0 +1,513 @@
+:root {
+	--backgroundcolor: #d9d9d9;
+	--textcolor: #ffffff;
+	--primarycolor: #d0417e;
+	--secondarycolor: #0000008f;
+	--thirdcollor: #010101;
+	--extracolor: #cccccc;
+}
+
+body{
+    font-family:'Roboto Mono', monospace;
+}
+
+.contenedor{
+    margin-top: 40px;
+    margin-left: 120px;
+    margin-right: 30px;
+}
+
+.bloque-izquierda{
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    border-radius: 4%;
+    box-shadow: 1px 1px 10px 10px #d1cdcd;
+    /*width: 430px;*/
+    height: fit-content;
+    padding-bottom: 13px;
+}
+
+.bloque-derecha{
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    border-radius: 4%;
+    box-shadow: 1px 1px 10px 10px #d1cdcd;
+    /*height: 500px;*/
+    padding-bottom: 15px;
+    height: fit-content;
+}
+
+
+/*Bloque izquierda*/
+
+.titulosRosa{
+    color: #D0417E;
+    font-weight: 800;
+    font-size: 28px;
+    text-align: center;
+}
+
+.obras{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Se agrega para contener la x de eiminar producto dentro de la tarjeta*/
+.tarjeta-obra{
+    position: relative;
+}
+
+.carrito-imagen img{
+    max-height: 250px;
+    object-fit: contain;
+    display: flex;
+}
+.carrito-imagen {
+    display: flex;
+}
+
+.card-title{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.btn-close{
+    position: absolute;
+    left: 920px;
+    top: 1px;
+}
+
+
+.nombre-artista{
+    font-size: 18px;
+    padding-left: 12px;
+}
+
+.descripcion-obra{
+    font-size: 15px;
+    text-align: justify;
+    padding-left: 24px;
+    padding-right: 60px;
+    height: 140px;
+    overflow-y: scroll;
+}
+
+.tamano-obra-carrito{
+    font-size: 16px;
+    text-align: center;
+}
+
+.precio-signo-carrito{
+    font-size: 16px;
+    text-align: right;
+    color: #010101;
+}
+
+.precio{
+    font-size: 16px;
+    text-align: left;
+    padding-right: 10px;
+    color: #010101;
+}
+
+/*Bloque derecho*/
+.sub-total-carrito-txt{
+    font-size: 16px;
+    color: #010101;
+    text-align: left;
+}
+
+.sub-total-carrito{
+    font-size: 16px;
+    font-weight: bold;
+    color: #010101;
+    text-align: left;
+}
+
+.costo-envio-carrito{
+    font-size: 16px;
+    color: #010101;
+    text-align: left;
+}
+
+.costo-envio{
+    font-size: 16px;
+    font-weight: bold;
+    color: #010101;
+    text-align: left;
+}
+
+.realizar-pago-carrito{
+    color: #D0417E;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px 0px #D0417E;
+    margin-left: 20px;
+    width: 160px;
+    height: 50px;
+}
+
+    .realizar-pago-carrito:hover{
+        color: #D0417E;
+    }
+
+    .precio-total-carrito{
+        color: #010101;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+ @media (max-width: 1870px){ /*Extra*/
+    
+    /*  Bloque izquierda    */
+    .btn-close{
+        left: 850px;
+    }
+}
+    
+@media (max-width: 1700px){ /*Extra*/
+    
+     /*  Bloque izquierda    */
+    .btn-close{
+         left: 750px;
+    }
+}
+
+@media (max-width: 1500px){ /*Extra*/
+    
+    /*  Bloque izquierda    */
+    .btn-close{
+        left: 660px;
+    }
+
+    /*  Bloque derecho  */
+    .realizar-pago-carrito{
+        font-size: 16px;
+        margin-left: 0px;
+        width: 140px;
+        height: 40px;
+    }
+
+        .precio-total-carrito{
+            font-size: 16px;
+            padding: 8px;
+        }
+}
+
+@media (max-width: 1000px){ /*Extra*/
+    .contenedor{
+        margin-top: 30px;
+        margin-left: 25px;
+        margin-right: 1px;
+    }
+
+    .bloque-izquierda{
+        margin-right: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .bloque-derecha{
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+    /*  Bloque izquierda    */
+    .btn-close{
+        left: 480px;
+    }
+
+    /*  Bloque derecho  */
+
+    .realizar-pago-carrito{
+        font-size: 14px;
+        margin-left: 0px;
+        width: 120px;
+        height: 40px;
+    }
+
+        .precio-total-carrito{
+            font-size: 14px;
+            padding: 10px;
+        }
+}
+
+@media (max-width: 900px){ /*Extra*/
+    .contenedor{
+        margin-top: 30px;
+        margin-left: 25px;
+        margin-right: 1px;
+    }
+
+    .bloque-izquierda{
+        margin-right: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .bloque-derecha{
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+    /*  Bloque izquierda    */
+    .btn-close{
+        left: 430px;
+    }
+    /*  Bloque derecho  */
+
+    .realizar-pago-carrito{
+        font-size: 14px;
+        margin-left: 0px;
+        width: 100px;
+        height: 55px;
+    }
+
+        .precio-total-carrito{
+            font-size: 13px;
+            padding-top: 20px;
+        }
+}
+
+@media (max-width: 834px){  /*Vista Tableta*/
+    .contenedor{
+        margin-top: 30px;
+        margin-left: 25px;
+        margin-right: 1px;
+    }
+
+    .bloque-izquierda{
+        margin-right: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .bloque-derecha{
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+
+    /*  Bloque izquierda    */
+    .titulosRosa{
+        color: #D0417E;
+        font-weight: 800;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .obras{
+        font-size: 14px;
+    }
+
+    .carrito-imagen img{
+        max-height: 250px;
+        object-fit: contain;
+        display: flex;
+    }
+    .carrito-imagen {
+        display: flex;
+    }
+
+    .card-title{
+        font-size: 22px;
+    }
+
+    .btn-close{
+        left: 380px;
+    }
+
+    .nombre-artista{
+        font-size: 15px;
+    }
+
+    .descripcion-obra{
+        font-size: 12px;
+        padding-right: 30px;
+        height: 80px;
+    }
+
+    .tamano-obra-carrito{
+        font-size: 13px;
+    }
+
+    .precio-signo-carrito{
+        font-size: 13px;
+    }
+    
+    .precio{
+        font-size: 13px;
+    }
+
+    /*  Bloque derecho  */
+    .sub-total-carrito-txt{
+        font-size: 12px;
+    }
+    
+    .sub-total-carrito{
+        font-size: 12px;
+    }
+    
+    .costo-envio-carrito{
+        font-size: 12px;
+    }
+    
+    .costo-envio{
+        font-size: 12px;
+    }
+   
+    .realizar-pago-carrito{
+        font-size: 13px;
+        margin-left: 0px;
+        width: 85px;
+        height: 55px;
+    }
+
+        .precio-total-carrito{
+            font-size: 12px;
+            padding: 15px;
+        }
+
+}
+
+@media (max-width: 400px){  /*Vista Mobile*/
+    .contenedor{
+        flex-direction: column;
+        margin-top: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .bloque-izquierda{
+        margin-right: 10px;
+    }
+
+    .bloque-derecha{
+        margin-top: 25px;
+        margin-left: 2px;
+        margin-right: 15px;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+     /*  Bloque izquierda    */
+
+     .titulosRosa{
+        font-size: 24px;
+    }
+
+    .obras{
+        font-size: 14px;
+    }
+
+    .carrito-imagen img{
+        max-height: 250px;
+        object-fit: contain;
+        display: flex;
+    }
+
+    .carrito-imagen {
+        display: flex;
+    }
+
+    .card-title{
+        font-size: 18px;
+    }
+
+    .btn-close{
+        left: 290px;
+    }
+
+    .nombre-artista{
+        font-size: 14px;
+    }
+
+    .descripcion-obra{
+        font-size: 12px;
+        padding-right: 30px;
+        height: 80px;
+    }
+
+    .tamano-obra-carrito-carrito{
+        font-size: 14px;
+        padding-top: 4px;
+    }
+
+    .precio-signo-carrito{
+        position: absolute;
+        font-size: 14px;
+        left: 230px;
+    }
+
+    .precio{
+        position: absolute;
+        font-size: 13px;
+        left: 240px;
+    }
+
+    /*  Bloque derecho  */
+
+    .sub-total-carrito-txt{
+        font-size: 12px;
+    }
+    
+    .sub-total-carrito{
+        font-size: 12px;
+        margin-left: 150px;
+    }
+    
+    .costo-envio-carrito{
+        font-size: 12px;
+    }
+    
+    .costo-envio{
+        font-size: 12px;
+        margin-left: 115px;
+    }
+
+    .realizar-pago-carrito{
+        font-size: 14px;
+        margin-left: 0px;
+        width: 120px;
+        height: 40px;
+    }
+
+        .precio-total-carrito{
+            font-size: 14px;
+            padding-top: 10px;
+            margin-left: 20px;
+        }
+}
+
+.head-4 {
+	font-size: 24px;
+	line-height: 32px;
+}
+.head-5 {
+	font-size: 20px;
+	line-height: 28px;
+}
+.head-6 {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+}
+
+.footer {
+    margin-top: 40px;
+	text-align: center;
+	color: var(--textcolor);
+	background: var(--thirdcollor);
+}
+
+.footer p {
+	margin: 0;
+	color: var(--textcolor);
+}
